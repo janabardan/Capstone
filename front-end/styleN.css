@@ -3,55 +3,62 @@
     color: #000;
     font-size: 28px;
 }
+
+#steps {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
 #topNav{
     width: 90%;
     text-align: left;
     padding-left: 10%;
 }
 #division1, #division2, #division3{
-    width: 30%;
+    width: 100%;
     color: black;
     background-color: #DCDCDF;
-    border: white solid 5px;
+    border: white solid px;
     display: inline-block;
     border-radius: 5%;
     flex: 1;
-    padding: 5px;
+    padding: 0;
     min-height: 200px;
 }
 
+#division1-1, #division2-2, #division3-3{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0; 
+}
 
 #input-text, textarea { 
     background-color: #579792;
 }
 
-#steps, .steps {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-}
-
-
-h1{
+#step-title{
+    padding-top: 20px;
     color: #FF6F28;
     text-align: center;
-    size: 11.7px;
+    font-size:25px;
 }
 
 input[type=text] {
     background-color: #579792;
-    color: white;
-    border: none;
+    color: white ;
+    border: none ;
     padding: 12px 10px;
-     margin: 8px 0;
-     width: 90%;
-  }
+    margin: 8px 0 ;
+    width: 200px ;
+    height: 10px;
+  } 
 
-.input{
+/* .input{
     text-align: center;
-}
+} */
 
-.container {
+/* .container {
     display: block;
     position: relative;
     padding-left: 35px;
@@ -85,12 +92,10 @@ input[type=text] {
     border-color: #000;
   }
   
-  /* On mouse-over, add a grey background color */
   .container:hover input ~ .checkmark {
     background-color: #ccc;
   }
   
-  /* When the radio button is checked, add a blue background */
   .container input:checked ~ .checkmark {
     background-color: #579792;
 
@@ -115,4 +120,18 @@ input[type=text] {
     border-radius: 50%;
     background: white;
   }
-  
+   */
+  .animated-element {
+    text-align: center;
+    height: 40;
+    animation: fadeInOut 2s infinite; /* 2s duration, infinite loop */
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+}
