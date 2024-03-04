@@ -1,0 +1,118 @@
+#textStyle {
+    font-family: Gatwick;
+    color: #000;
+    font-size: 28px;
+}
+#topNav{
+    width: 90%;
+    text-align: left;
+    padding-left: 10%;
+}
+#division1, #division2, #division3{
+    width: 30%;
+    color: black;
+    background-color: #DCDCDF;
+    border: white solid 5px;
+    display: inline-block;
+    border-radius: 5%;
+    flex: 1;
+    padding: 5px;
+    min-height: 200px;
+}
+
+
+#input-text, textarea { 
+    background-color: #579792;
+}
+
+#steps, .steps {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+h1{
+    color: #FF6F28;
+    text-align: center;
+    size: 11.7px;
+}
+
+input[type=text] {
+    background-color: #579792;
+    color: white;
+    border: none;
+    padding: 12px 10px;
+     margin: 8px 0;
+     width: 90%;
+  }
+
+.input{
+    text-align: center;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    border-color: #000;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #579792;
+
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+  
