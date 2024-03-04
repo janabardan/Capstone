@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleN.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div>
+        <div id="topNav">
+            <p style="color:#FF6F28; font-size: 20px">Step 3</p>
+            <p id="textStyle">Almost There!</p>
+        </div>
+
+        <section id="steps"
+            style="padding-top: 20px;padding-left: 30px;display: flex; flex-direction: column; margin-bottom: 50px;">
+            <!-- <div id="steps"> -->
+
+            <div class="container text-center" style="flex: 1;">
+                <div class="row">
+                    <div class="col">
+                        <img class="animated-element" src="image1.png">
+                        <div id="division1">
+                            <h1 id="step-title">Who are your top 3 artists ? </h1>
+                            <input type="text" placeholder="1." id="artist1" style="margin-bottom: 15px;">
+                            <input type="text" placeholder="2." id="artist2" style="margin-bottom: 15px;">
+                            <input type="text" placeholder="3." id="artist3" style="margin-bottom: 15px;">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img class="animated-element" src="image1.png">
+                        <div id="division2" class="input">
+
+                            <h1 id="step-title">What are your 3 favorite movies/ series ? </h1>
+                            <input type="text" placeholder="1." id="movie1" style="margin-bottom: 15px;">
+                            <input type="text" placeholder="2." id="movie2" style="margin-bottom: 15px;">
+                            <input type="text" placeholder="3." id="movie3" style="margin-bottom: 15px;">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img class="animated-element" src="image1.png">
+                        <div id="division3" class="input" style="padding: 0px;">
+                            <h1 id="step-title">Tell Us More About You</h1>
+                            <textarea id="description"
+                                style="margin-bottom: 15px;height: 80%;vertical-align: top;text-align:top;"></textarea>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    <div id="button-nav">
+        <button type="button" onclick="goToPrevPage()" class="btn"
+            style="background-color:#a19e9e; width: 15%;border-right:50px;color:white;font-size: larger;">BACK</button>
+
+        <button type="button" onclick="goToNextPage()" class="btn"
+            style="background-color:#FF6F28; width: 15%;border-right:30px;color:white;font-size: larger;">NEXT</button>
+    </div>
+
+    </section>
+
+
+    </div>
+    <script src="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function updateButtonText(selectedItem) {
+            var buttonText = $(selectedItem).text();
+            $('#dropdownMenuButton').text(buttonText);
+        }
+
+        function goToNextPage() {
+
+            window.location.href = "step4.html";
+        }
+        function goToPrevPage() {
+
+            window.location.href = "step2.html";
+        }
+    </script>
+
+</body>
+
+</html>
