@@ -1,0 +1,113 @@
+
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href="../styles/stylej.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <script>
+            // alert("my first javascript!"); 
+         </script>
+        <title>
+            Sign Up
+        </title>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    </head>
+    <body>
+        <div class="text">
+            <h2>Build Your Profile!</h2>
+            
+    
+        </div>
+    
+        <div class="form-container2">
+            <div class="paragraph">
+                <h2 class = "header">SIGN IN</h2>
+            <form action="../backend/signup.php" method="POST" name="signup-form">
+                <label for="un">Full Name</label>
+                <br>
+                <input type="text" name="fullname" class="txtfield" >
+                <br>
+                <label for="un">Username</label>
+                <br>
+                <input type="text" name="username" class="txtfield">
+                <br>
+                <label for="un">LAU ID</label>
+                <br>
+                <input type="number" min = "1" name="lauid" class="txtfield" >
+                <br>
+                <label for="un">LAU Email</label>
+                <br>
+                <input type="email" name="lauemail"  pattern=".+@lau\.edu" class="txtfield" >
+                <br>
+                <label for="pass">Password</label>
+                <br>
+                <input type="password" name="pass" class="txtfield">
+                <br>
+                <label for="pass">Confirm Password</label>
+                <br>
+                <input type="password" name="confirmPassword" class="txtfield">
+                
+                <br>
+                <input type="button" value="NEXT" class="abutton" onclick="SignUp()">
+            </form>
+            <a class ="header" style="text-decoration: none; margin: top 0; padding-top:0%" href="./../../index.php">ALREADY HAVE AN ACCOUNT? SIGN IN!</a>
+        </div>
+        </div>
+    
+<script>
+
+        $(function() {
+            // Initialize Datepicker
+            $("#birthdate").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                yearRange: 'c-100:c', // Allows selecting from 100 years ago to the current year
+                dateFormat: 'yy-mm-dd' // Sets the date format to YYYY-MM-DD
+            });
+        
+            // Toggle drawer open/close
+            //$('.drawer-toggle').click(function(){
+              //  $(this).next('.drawer-content').toggleClass('open');
+           // });
+        
+            // Handle selection in drawers
+            //$('.drawer-content button').click(function(){
+              //  const drawer = $(this).closest('.drawer');
+                //drawer.find('.drawer-toggle').text($(this).text());
+                //drawer.removeClass('open');
+           // }); 
+        });
+        
+    function SignUp(){
+        var mForm=document.querySelector("form[name='signup-form']");
+        var fullname=mForm.elements["fullname"].value;
+        var username=mForm.elements["username"].value;
+        var pass=mForm.elements["pass"].value;
+        var confPass=mForm.elements["confirmPassword"].value;
+        //var sex=mForm.elements["gender"].value;
+        var birthdate=mForm.elements["birthdate"].value;
+       
+        console.log("fullname:"+fullname);
+        console.log("username:"+username);
+        console.log("pass:"+pass);
+        //console.log("gender:"+sex);
+        console.log("birthdate:"+birthdate);
+
+        if ((pass!=confPass)||(pass==""))
+            alert("Passwords must be equal.");
+        else
+            mForm.submit();        
+    }
+    function ClearForm(){
+        var mForm=document.querySelector("form[name='signup-form']");
+        mForm.elements["fullname"].value="";
+        mForm.elements["username"].value="";
+        mForm.elements["pass"].value="";
+        mForm.elements["confirmPassword"].value="";
+        mForm.elements["gender"].value="m";
+        mForm.elements["birthdate"].value=null;
+      
+    }
+</script>
+</body>
+</html>
