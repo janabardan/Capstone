@@ -29,7 +29,7 @@
     border-radius: 5%;
     flex: 1;
     padding: 20px;
-    height: 80%;
+    height: 85%;
     }
 
 #division1-1, #division2-2, #division3-3{
@@ -60,7 +60,9 @@ input[type=text] {
     font-size: 15px;
     font-weight: lighter;
     vertical-align: top;
+    padding-left: 10px;
   } 
+
  input::placeholder {
     color: black; 
     padding-left: 10px;
@@ -157,4 +159,17 @@ input[type=text] {
 
 .dropdown-menu {
     margin-bottom: 10px;
+}
+
+#div1.col, #div2.col, #div3.col, #div4.col{
+    
+    color: black;
+    background-color: #DCDCDF;
+    border: white solid px;
+    border-radius: 5%;
+    margin: 5px;
+    padding: 20px;
+    margin-top: 30px;
+    height: 85%;
+    width: 49%;
 }
