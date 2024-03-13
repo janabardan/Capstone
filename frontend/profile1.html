@@ -112,7 +112,7 @@
                                                 <input type="text" class="form-control" id="date" />
                                                 <span class="input-group-append">
                                                     <span class="input-group-text bg-light d-block">
-                                                        <i class="fa fa-calendar" id="calendar-icon" role="button" ></i>
+                                                        <i class="fa fa-calendar" id="calendar-icon"  ></i>
                                                     </span>
                                                 </span>
                                             </div>
@@ -165,21 +165,7 @@
    
     <script>
 
-        $(document).ready(function () {
-            // Hide the datepicker initially
-            $('#datepicker').datepicker({
-                autoHide: true,
-                showOnFocus: false,
-                buttonImage: '', // Replace with the correct URL for your calendar icon
-                buttonImageOnly: true,
-            });
-        
-            // Show the datepicker when the icon is clicked
-            $('#calendar-icon').on('click', function () {
-                $('#datepicker').datepicker('show');
-            });
-        });
-        
+      
 
         function goToNextPage() {
 
