@@ -18,17 +18,31 @@
 <body>
 
     <div>
-        <div id="topNav">
+        <div class="row justify-content-between" id="topNav">
+            <div class="col-4">
+                <img style="width: 50px; height: 50px; padding-bottom: 10px" src="../Assets/star.png">
+                <span style="font-size: 25px;">Personal Information</span>            
+            </div>
+            <div class="col-4">
+                <button type="button" onclick="goToNextPage()" class="btn"
+                style="background-color:#FF6F28; width: 25%;border-right:30px;color:white;font-size: larger;float: right; margin-left: 30px;">Edit</button>            
+           
+                <button type="button" class="btn btn-secondary" style=" width: 25%;border-right:30px;color:white;font-size: larger;float: right;">Save</button>
+            </div>
+        <!-- <div id="topNav">
             <img style="width: 50px; height: 50px; padding-bottom: 10px" src="../Assets/star.png">
             <span style="font-size: 35px;">Personal Information</span>
-        </div>
+            <button type="button" onclick="goToNextPage()" class="btn"
+            style="background-color:#FF6F28; width: 25%;border-right:30px;color:white;font-size: larger;">Edit</button>
+        </div> -->
 
-        <section id="steps" style="padding-top: 20px;padding-left: 30px;display: flex; flex-direction: column;">
+        <section id="steps" style="padding-top:0px;padding-left: 30px;display: flex; flex-direction: column;">
             <div class="container text-center">
-                <div class="row">
-
-                    <div class="col-6">
-                        <div id="division1" style="height: 100%;">
+                
+                <div class="container text-center" style="width: 100%;">
+                    <div class="row row-cols-2">
+                       
+                        <div class="col" id="div1">Info
                             <div class="mb-3 row">
                                 <label for="staticUsername" class="col-sm-2 col-form-label">School</label>
                                 <div class="col-sm-10">
@@ -57,14 +71,13 @@
                                         value="Beirut">
                                 </div>
                             </div>
-
                         </div>
-                    </div>
-
-                </div>
-                <div class="container text-center" style="width: 100%;">
-                    <div class="row row-cols-2">
-                        <div class="col" id="div1">Outdoor Activites
+                        <div class="col" id="div2" style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+                            Bio
+                            <input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" style="background-color: #c2c2c2; height: 90%; width: 95%; text-align: left;">
+                        </div>
+                        
+                        <div class="col" id="div3">Outdoor Activites
                             <div class="mb-3 row" style="margin-top: 10px;">
                                 <label for="staticUsername" class="col-sm-2 col-form-label"
                                     style="width:fit-content;">Activity 1</label>
@@ -90,7 +103,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col" id="div2">Indoor Activites
+                        <div class="col" id="div4">Indoor Activites
                             <div class="mb-3 row" style="margin-top: 10px;">
                                 <label for="staticUsername" class="col-sm-2 col-form-label"
                                     style="width:fit-content;">Activity 1</label>
@@ -116,7 +129,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col" id="div3">Movies/Series
+                        <div class="col" id="div5">Movies/Series
                             <div class="mb-3 row" style="margin-top: 10px;">
                                 <label for="staticUsername" class="col-sm-2 col-form-label"
                                     style="width:fit-content;">Genre 1</label>
@@ -142,7 +155,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col" id="div4">Music Genres
+                        <div class="col" id="div6">Music Genres
 
                             <div class="mb-3 row" style="margin-top: 10px;">
                                 <label for="staticUsername" class="col-sm-2 col-form-label"
@@ -185,9 +198,9 @@
     <script src="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <script>
 
-        $(function () {
+        <!-- $(function () {
             $('#datepicker').datepicker();
-        });
+        }); -->
 
         function goToNextPage() {
 

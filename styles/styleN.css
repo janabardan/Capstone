@@ -12,6 +12,7 @@
     width: 100%;
     display: flex;
     align-items: flex-start;
+
 }
 
 #topNav{
@@ -161,7 +162,7 @@ input[type=text] {
     margin-bottom: 10px;
 }
 
-#div1.col, #div2.col, #div3.col, #div4.col{
+#div1.col, #div3.col, #div4.col,  #div5.col, #div6.col{
     
     color: black;
     background-color: #DCDCDF;
@@ -173,3 +174,15 @@ input[type=text] {
     height: 85%;
     width: 49%;
 }
+#div2.col{
+    color: black;
+    background-color: #DCDCDF;
+    border: white solid px;
+    border-radius: 5%;
+    margin: 5px;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    width: 49%;
+}
+
