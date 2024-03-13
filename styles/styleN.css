@@ -16,10 +16,10 @@
 }
 
 #topNav{
-    width: 90%;
+    width: 100%;
     text-align: left;
-    padding-left: 10%;
-    padding-top: 20px;
+    
+    padding-top: 2px;
 }
 #division1, #division2, #division3{
     width: 100%;
