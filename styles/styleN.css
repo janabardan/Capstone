@@ -15,11 +15,11 @@
 
 }
 
-#topNav{
+.topNav{
     width: 100%;
     text-align: left;
-    
-    padding-top: 2px;
+    margin-top: 20px;
+    padding-top: 5px;
 }
 #division1, #division2, #division3{
     width: 100%;
